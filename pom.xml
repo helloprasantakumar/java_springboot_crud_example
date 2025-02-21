@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.javatechie</groupId>
 	<artifactId>java_springboot_crud_example</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>3.0.1</version>
 	<name>java_springboot_crud_example</name>
 	<description>Demo project for Spring Boot</description>
 

@@ -5,7 +5,7 @@ FROM openjdk:13-jdk
 WORKDIR /app
 
 # Copy the application JAR file
-COPY target/java_springboot_crud_example-0.0.1-SNAPSHOT.jar app.jar
+COPY target/java_springboot_crud_example-3.0.1.jar app.jar
 
 # Expose the application port
 EXPOSE 9191
