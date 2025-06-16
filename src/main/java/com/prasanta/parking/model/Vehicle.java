@@ -4,18 +4,31 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "vehicle")
 public class Vehicle {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
+    @Column(name = "license_plate", nullable = false, length = 20)
     private String licensePlate;
+
+    @Column(name = "vehicle_type", nullable = false, length = 50)
     private String vehicleType;
+
+    @Column(name = "entry_time")
     private LocalDateTime entryTime;
+
+    @Column(name = "exit_time")
     private LocalDateTime exitTime;
 
     @ManyToOne
+    @JoinColumn(name = "slot_id", nullable = false)
     private ParkingSlot slot;
+
+    // Getters and Setters
 
     public Long getId() {
         return id;
